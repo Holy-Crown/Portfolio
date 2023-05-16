@@ -1,0 +1,284 @@
+html {
+  scroll-behavior: smooth;
+}
+header {
+  background-color: #370F40;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: -50px;
+  right: -0px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+body {
+    background: linear-gradient(to bottom, #370F40, #FF6E49);
+    font-family: Helvetica, sans-serif;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Aquire", sans-serif;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+	
+}
+.previous-work {
+  margin-top: 50px;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+.about-me {
+    display: flex;
+    margin-top: 50px;
+}
+
+.profile-image {
+    flex: 1;
+	 max-width: 300px;
+  position: relative;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+}
+.description {
+    flex: 2;
+    padding-left: 20px;
+}
+banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Set the height of the banner */
+}
+.banner-text {
+  text-align: center;
+  margin-top: 50px; /* adjust as needed */
+}
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.programs {
+    margin-top: 20px;
+}
+
+.programs ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.programs li {
+    margin-bottom: 20px;
+}
+
+.programs li img {
+    width: 100%;
+    height: auto;
+    display: block;
+    flex-grow: 1;
+}
+
+.programs li img:hover {
+    transform: scale(1.1);
+}
+.programs .circle {
+  position: relative;
+  display: inline-block;
+}
+
+.programs .circle img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.programs .circle:hover .tooltip {
+  display: block;
+}
+
+.previous-work {
+    margin-top: 50px;
+}
+
+.videos, .images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.videos video, .images img {
+    width: 48%;
+    height: auto;
+    display: block;
+}
+
+.testimonials {
+    margin-top: 50px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.contact-me {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form label {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+form textarea {
+    height: 150px;
+}
+
+form input[type="submit"] {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+form input[type="submit"]:hover {
+    background-color: #000;
+    color: #fff;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .about-me {
+    flex-direction: column;
+  }
+.logo {
+     width: auto;
+     height: auto;
+     top: -30px;
+     right: -50px;
+	}
+  .profile-image {
+    flex: none;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    flex: none;
+    padding-left: 0;
+  }
+
+  .programs li {
+    width: 48%;
+  }
+  .image-gallery {
+    grid-template-columns: 1fr;
+  }
+  .videos, .images {
+    flex-direction: column;
+  }
+
+  .videos video, .images img {
+    width: 100%;
+  }
+  form {
+    width: 90%;
+  }
+}
+
